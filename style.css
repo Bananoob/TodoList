@@ -1,0 +1,150 @@
+* {
+    font-family: 'poppins';
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url(./assets/background.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+.wrapper {
+    display: flex;
+}
+
+ion-icon {
+    font-size: 30px;
+}
+
+/* Nav */
+    nav {
+        border-bottom: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #ffffff2d;
+        backdrop-filter: blur(100px);
+    }
+
+    nav .logo h1 {
+        padding: 20px 40px;
+        font-size: 36px;
+        font-weight: 200;
+    }
+
+    nav .rightSide {
+        display: flex;
+        align-items: center;
+    }
+
+    nav .rightSide button {
+        padding: 0;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    nav .rightSide ion-icon {
+        margin-top: 5px;
+        padding-right: 10px;
+    }
+
+/* New Task */
+    #tasks div {
+        background: transparent;
+        box-shadow: var(--ds-shadow-raised,0 1px 1px #091e4240,0 0 1px #091e424f);
+        width: 90%;
+        margin: 10px auto;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+
+    #tasks div.dragging {
+        opacity: 0.5;
+    }
+
+    #tasks div p {
+        padding: 5px 0 5px 10px;
+    }
+
+/* Task */
+    .toDo {
+        width: 300px;
+        margin: 20px;
+        background: #ffffff80;
+        backdrop-filter: blur(10px);
+        border: 1px solid #ccc;
+        border-radius: 7px;
+    }
+
+    .toDo header {
+        display: flex;
+        border-bottom: 1px solid #ccc;
+        align-items: center;
+        width: 100%;
+    }
+
+    .toDo header h2 {
+        padding: 10px 20px;
+    }
+
+    #newTask {
+        padding: 10px;
+        width: 80%;
+        margin: 10px auto 15px auto;
+        display: none;
+        border: 1px solid #ccc;
+        background: transparent;
+        border-radius: 5px;
+        box-shadow: var(--ds-shadow-raised,0 1px 1px #091e4240,0 0 1px #091e424f);
+    }
+
+    .toDo .addDiv {
+        margin-top: 3.5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .toDo .addDiv button {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 7px;
+        background: transparent;
+        font-size: 16px;
+        margin: 5px auto 10px auto;
+        padding: 5px 0;
+        cursor: pointer;
+    }
+
+    .toDo .addDiv button:hover {
+        transition: all ease 0.25s;
+        background: #ffffffcb;
+    }
+
+    .toDo .addDiv button ion-icon {
+        font-size: 20px;
+    }
+
+/* Add list */
+.addList #addListButton {
+    width: 300px;
+    font-size: 16px;
+    padding: 5px;
+    margin: 20px;
+    border: none;
+    border-radius: 7px;
+    background: #ffffff80;
+    backdrop-filter: blur(10px);
+    transition: all ease 0.25s;
+    cursor: pointer;
+}
+
+.addList #addListButton:hover {
+    background: #ffffffcb;
+}
